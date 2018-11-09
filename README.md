@@ -1,1 +1,1 @@
-Hangman-Alpha-Sprint
+Hangman Alpha Sprint
