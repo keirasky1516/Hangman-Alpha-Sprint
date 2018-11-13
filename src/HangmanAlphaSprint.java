@@ -9,6 +9,8 @@ public class HangmanAlphaSprint {
     String input;
     String secretWord = new String();
     String playerGuess;
+    int wrongGuess;
+    wrongGuess=numberoftries;
        /* for(int i = 0; i<secretWord.length(); i++) {
         } String a,b,c,d,e,f,g,h,i,j,k,l,m,n,p,q,r,s,t,u,v,w,x,y,z;*/
     System.out.println("Welcome to hangman, would you like to play?");
@@ -22,15 +24,50 @@ public class HangmanAlphaSprint {
 
         System.out.println("Guess is correct: "+ checkLetter(playerGuess,secretWord));
 
-        
+        if(wrongGuess==1);
+        System.out.println("Sorry that letter is not found");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+
+        System.out.println("7 guesses left. Guess another letter");
+        playerGuess=keyboard.nextLine();
+
+         if(wrongGuess==2);
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+
+            System.out.println("6 guesses left. Guess another letter");
+            playerGuess=keyboard.nextLine();
+
+            if(wrongGuess==3);
+            System.out.println("Sorry that letter is not found");
 
 
 
 
 
-}
-
-public static boolean checkLetter(String letter, String secretWord){
+        }
+        public static boolean checkLetter(String letter, String secretWord){
 
         if(secretWord.contains(letter)){
             return true;
