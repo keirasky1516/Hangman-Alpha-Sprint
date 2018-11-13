@@ -22,6 +22,8 @@ public class HangmanAlphaSprint {
 
         System.out.println("Guess is correct: "+ checkLetter(playerGuess,secretWord));
 
+        
+
 
 
 
