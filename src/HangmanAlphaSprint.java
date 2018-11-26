@@ -21,6 +21,7 @@ public class HangmanAlphaSprint {
         secretWord=keyboard.nextLine();
         System.out.println("Thank you! Now player 1 guess a letter");
         playerGuess = keyboard.nextLine();
+        
 
         System.out.println("Guess is correct: "+ checkLetter(playerGuess,secretWord));
 
