@@ -15,6 +15,8 @@ public class HangmanAlphaSprint {
         wrongGuess = numberoftries;
         String guess;
 
+        secretWord="";
+
 
 
 
@@ -30,11 +32,17 @@ public class HangmanAlphaSprint {
         System.out.println("Thank you! Now player 1 guess a letter");
         playerGuess = keyboard.nextLine();
 
+       if (checkLetter(playerGuess,secretWord)){
+           System.out.println("Correct!");
+       }
+       else {
+           System.out.println("That letter is incorrect");
+       }
+
+        public static void hangmanImage(playerGuess,secretWord)
 
 
-
-
-        if (wrongGuess == 1)
+       if (wrongGuess == 1)
             System.out.println("Sorry that letter is not found");
             System.out.println(" |");
             System.out.println(" |");
@@ -188,8 +196,10 @@ public class HangmanAlphaSprint {
     } public static boolean checkLetter(String letter, String secretWord){
 
         if(secretWord.contains(letter)){
+           System.out.println("I am inside this statement");
             return true;
         }
+        System.out.println("I am outside of this statement");
         return false;
 
 
