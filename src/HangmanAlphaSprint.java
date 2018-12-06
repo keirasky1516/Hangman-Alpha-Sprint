@@ -41,6 +41,8 @@ public class HangmanAlphaSprint {
         }
 
 
+
+
         if (wrongGuess == 1)
             System.out.println("Sorry that letter is not found");
         System.out.println(" |");
@@ -195,10 +197,11 @@ public class HangmanAlphaSprint {
 
             System.out.println("Do you want to play again (yes/no)");
             keyboard.nextLine();
+
             if (input.equals("yes"));
             System.out.println("Great lets play again");
 
-            if(input.equals("no"));
+            if (input.equals("no"));
             System.out.println("Game over");
 
 
