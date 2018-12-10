@@ -38,179 +38,173 @@ public class HangmanAlphaSprint {
             System.out.println("Correct!");
         } else {
             System.out.println("That letter is incorrect");
+            wrongGuess = wrongGuess - 1;
+            hangmanImage(wrongGuess);
         }
 
-       public static void hangmanImage()
 
+        System.out.println("Do you want to play again (yes/no)");
+        keyboard.nextLine();
 
+        if (input.equals("yes")) ;
+        System.out.println("Great lets play again");
 
-        if (wrongGuess == 1)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-
-        System.out.println("7 guesses left. Guess another letter");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 2)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" -------------------");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-
-        System.out.println("6 guesses left. Guess another letter");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 3)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" -------------------");
-        System.out.println(" |                 (   )   ");
-        System.out.println(" |               (       )  ");
-        System.out.println(" |                 (   )    ");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-        System.out.println(" |");
-
-        System.out.println("5 guesses left. Try again");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 4)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" -------------------");
-        System.out.println(" |                 (   )   ");
-        System.out.println(" |               (       )  ");
-        System.out.println(" |                 (   )    ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                           ");
-        System.out.println(" |                           ");
-
-        System.out.println("4 guesses left. Try again");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 5)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" -------------------");
-        System.out.println(" |                 (   )   ");
-        System.out.println(" |               (       )  ");
-        System.out.println(" |                 (   )    ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |         ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                  (       ");
-        System.out.println(" |                 (          ");
-
-        System.out.println("3 guesses left. Try again");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 6)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" -------------------");
-        System.out.println(" |                 (   )   ");
-        System.out.println(" |               (       )  ");
-        System.out.println(" |                 (   )    ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |         ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                  ( )      ");
-        System.out.println(" |                 (   )       ");
-
-        System.out.println("2 guesses left. Try again");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 7)
-            System.out.println("Sorry that letter is not found");
-        System.out.println(" -------------------");
-        System.out.println(" |                 (   )   ");
-        System.out.println(" |               (       )  ");
-        System.out.println(" |                 (   )    ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                  (|         ");
-        System.out.println(" |                (  |       ");
-        System.out.println(" |              (    |        ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                  ( )      ");
-        System.out.println(" |                 (   )       ");
-
-        System.out.println("1 guess left. Try again");
-        playerGuess = keyboard.nextLine();
-
-
-        if (wrongGuess == 8)
-            System.out.println("Sorry that letter is not found. Game over, player 2 wins");
-        System.out.println(" -------------------");
-        System.out.println(" |                 (   )   ");
-        System.out.println(" |               (       )  ");
-        System.out.println(" |                 (   )    ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                   |       ");
-        System.out.println(" |                  (|)         ");
-        System.out.println(" |                (  |  )     ");
-        System.out.println(" |              (    |    )    ");
-        System.out.println(" |                   |        ");
-        System.out.println(" |                  ( )      ");
-        System.out.println(" |                 (   )       ");
-
-
-
-
-
-
-            System.out.println("Do you want to play again (yes/no)");
-            keyboard.nextLine();
-
-            if (input.equals("yes"));
-            System.out.println("Great lets play again");
-
-            if (input.equals("no"));
+    }  else if(input.equals("no"));
             System.out.println("Game over");
 
 
 
 
+    public static void hangmanImage(int wrongGuess) {
 
 
-    } public static boolean checkLetter(String letter, String secretWord){
+        if (wrongGuess == 1){
+            System.out.println("Sorry that letter is not found");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+        System.out.println(" |");
+    }
+
+
+
+        if (wrongGuess == 2) {
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+        }
+
+
+
+        if (wrongGuess == 3) {
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |                 (   )   ");
+            System.out.println(" |               (       )  ");
+            System.out.println(" |                 (   )    ");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+            System.out.println(" |");
+        }
+
+
+
+        if (wrongGuess == 4) {
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |                 (   )   ");
+            System.out.println(" |               (       )  ");
+            System.out.println(" |                 (   )    ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                           ");
+            System.out.println(" |                           ");
+        }
+
+
+
+        if (wrongGuess == 5) {
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |                 (   )   ");
+            System.out.println(" |               (       )  ");
+            System.out.println(" |                 (   )    ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |         ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                  (       ");
+            System.out.println(" |                 (          ");
+
+        }
+
+
+        if (wrongGuess == 6) {
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |                 (   )   ");
+            System.out.println(" |               (       )  ");
+            System.out.println(" |                 (   )    ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |         ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                  ( )      ");
+            System.out.println(" |                 (   )       ");
+
+        }
+
+        if (wrongGuess == 7) {
+            System.out.println("Sorry that letter is not found");
+            System.out.println(" -------------------");
+            System.out.println(" |                 (   )   ");
+            System.out.println(" |               (       )  ");
+            System.out.println(" |                 (   )    ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                  (|         ");
+            System.out.println(" |                (  |       ");
+            System.out.println(" |              (    |        ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                  ( )      ");
+            System.out.println(" |                 (   )       ");
+
+        }
+
+
+        if (wrongGuess == 8) {
+            System.out.println("Sorry that letter is not found. Game over, player 2 wins");
+            System.out.println(" -------------------");
+            System.out.println(" |                 (   )   ");
+            System.out.println(" |               (       )  ");
+            System.out.println(" |                 (   )    ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                   |       ");
+            System.out.println(" |                  (|)         ");
+            System.out.println(" |                (  |  )     ");
+            System.out.println(" |              (    |    )    ");
+            System.out.println(" |                   |        ");
+            System.out.println(" |                  ( )      ");
+            System.out.println(" |                 (   )       ");
+        }
+
+    }
+
+
+
+
+
+    public static boolean checkLetter(String letter, String secretWord){
 
         if(secretWord.contains(letter)){
            System.out.println("I am inside this statement");
