@@ -40,7 +40,8 @@ public class HangmanAlphaSprint {
             System.out.println("That letter is incorrect");
         }
 
-        
+       public static void hangmanImage()
+
 
 
         if (wrongGuess == 1)
