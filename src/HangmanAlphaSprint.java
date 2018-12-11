@@ -76,6 +76,7 @@ public class HangmanAlphaSprint {
 
 
 
+
         if (wrongGuess == 2) {
             System.out.println("Sorry that letter is not found");
             System.out.println(" -------------------");
