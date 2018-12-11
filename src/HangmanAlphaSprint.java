@@ -49,10 +49,11 @@ public class HangmanAlphaSprint {
         if (input.equals("yes")) ;
         System.out.println("Great lets play again");
 
-    }  else if(input.equals("no"));
-            System.out.println("Game over");
+     if (input.equals("no")) {
+         System.out.println("Game over");
+     }
 
-
+    }
 
 
     public static void hangmanImage(int wrongGuess) {
